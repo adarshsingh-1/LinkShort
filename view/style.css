@@ -1,0 +1,222 @@
+body {
+    background: #f5f5f5;
+    font-family: -apple-system, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container, .table-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 0 auto 20px;
+}
+
+h1 { 
+    color: #333; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e5e9;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button, .back-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    transition: background 0.2s;
+}
+
+button:hover, .back-btn:hover { 
+    background: #0056b3; 
+}
+
+.refresh-btn { 
+    background: #28a745; 
+}
+
+.refresh-btn:hover { 
+    background: #1e7e34; 
+}
+
+.copy-btn { 
+    background: #6c757d; 
+    padding: 4px 8px; 
+    font-size: 12px; 
+    margin-left: 8px;
+}
+
+.copy-btn:hover {
+    background: #5a6268;
+}
+
+.analytics-btn { 
+    background: #17a2b8; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+}
+
+.analytics-btn:hover {
+    background: #138496;
+}
+
+.nav-buttons { 
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+.history-link { 
+    display: block; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #007bff; 
+    text-decoration: none;
+}
+
+.history-link:hover {
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 15px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+th { 
+    background: #f8f9fa; 
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+}
+
+tbody tr:hover { 
+    background: #f8f9fa; 
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* URL truncation for mobile */
+.url-text {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.short-url {
+    font-family: monospace;
+    background: #f1f3f4;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.loading, .no-urls {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+.click-count {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 18px;
+}
+
+#result-container { 
+    margin-top: 20px; 
+}
+
+.result-success {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #28a745;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    body { 
+        padding: 10px; 
+    }
+    
+    .container, .table-container { 
+        padding: 20px; 
+    }
+    
+    table { 
+        font-size: 14px; 
+    }
+    
+    th, td { 
+        padding: 10px 8px; 
+    }
+    
+    .url-text {
+        max-width: 120px;
+    }
+    
+    .nav-buttons {
+        margin-bottom: 20px;
+    }
+    
+    button, .back-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    .url-text {
+        max-width: 100px;
+    }
+    
+    th, td {
+        padding: 8px 4px;
+        font-size: 12px;
+    }
+    
+    .copy-btn, .analytics-btn {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ LinkShort</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 URL History</h1>
+        <div class="nav-buttons">
+            <a href="/" class="back-btn">← Back to Shortener</a>
+            <button id="refresh-btn" class="refresh-btn">🔄 Refresh</button>
+        </div>
+        
+        <div class="table-container">
+            <div id="loading" class="loading">Loading URLs...</div>
+            <table id="history-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Original URL</th>
+                        <th>Short URL</th>
+                        <th>Clicks</th>
+                        <th>Created</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="url-table-body">
+                    
+                </tbody>
+            </table>
+            <div id="no-urls" class="no-urls" style="display: none;">
+                <p>No URLs found. <a href="/">Create your first shortened URL!</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/history.js"></script>
+</body>
+</html>
