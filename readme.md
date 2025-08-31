@@ -1,6 +1,6 @@
 # URL Shortener
 
-A clean URL shortener with secure redirection, JWT auth, and basic analytics. Built with Node.js, Express, MongoDB, Mongoose, and EJS.
+A clean URL shortener with secure redirection,and basic analytics. Built with Node.js, Express, MongoDB, Mongoose, and EJS.
 
 ## Features
 
@@ -20,3 +20,4 @@ A clean URL shortener with secure redirection, JWT auth, and basic analytics. Bu
 - DB: MongoDB with Mongoose
 - Views: EJS
 - Auth: JWT
+
